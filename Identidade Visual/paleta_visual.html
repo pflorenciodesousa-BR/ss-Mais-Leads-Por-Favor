@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Guidelines - Mais Leads</title>
+    <!-- Importando a fonte Montserrat do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --verde-militar: #588048; /* Novo verde sugerido */
+            --verde-escuro-antigo: #2D3E2C; /* Mantido como apoio para contraste */
+            --verde-limao: #E4FD97;
+            --laranja-acao: #FF5A26;
+            --branco-puro: #FFFFFF;
+            --branco-gelo: #F7F9F7;
+            --preto-puro: #000000;
+            --cinza-esverdeado: #1A201A;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--branco-gelo);
+            color: var(--cinza-esverdeado);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Tipografia */
+        h1, h2, h3 {
+            color: var(--verde-militar);
+            margin-bottom: 15px;
+        }
+        h1 { font-weight: 800; font-size: 2.5rem; text-transform: uppercase; letter-spacing: -1px; }
+        h2 { font-weight: 700; font-size: 2rem; border-bottom: 3px solid var(--verde-limao); display: inline-block; padding-bottom: 5px; margin-top: 40px; }
+
+        /* Componentes de Cores */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .color-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            background: var(--branco-puro);
+        }
+
+        .swatch {
+            height: 120px;
+            width: 100%;
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .info strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .info span {
+            font-size: 0.9rem;
+            color: #666;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 0.85rem;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Seções de Exemplo (Aplicações) */
+        .example-section {
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 4px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.2s, filter 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        .btn-acao {
+            background-color: var(--laranja-acao);
+            color: var(--branco-puro);
+            box-shadow: 0 4px 15px rgba(255, 90, 38, 0.4);
+        }
+
+        .btn-secundario {
+            background-color: var(--verde-escuro-antigo); /* Mantido escuro para dar leitura */
+            color: var(--verde-limao);
+        }
+
+        /* Estilos específicos de cada exemplo */
+        .bg-militar {
+            background-color: var(--verde-militar);
+            color: var(--branco-gelo);
+        }
+        .bg-militar h3 { color: var(--branco-puro); } /* O limão não dá leitura aqui, mudado para branco */
+
+        .bg-limao {
+            background-color: var(--verde-limao);
+            color: var(--verde-escuro-antigo);
+        }
+        .bg-limao h3 { color: var(--verde-escuro-antigo); }
+
+        .bg-branco {
+            background-color: var(--branco-puro);
+            color: var(--cinza-esverdeado);
+            border: 1px solid #ddd;
+        }
+
+        .tipografia-box {
+            background-color: var(--branco-puro);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid var(--verde-militar);
+            margin-bottom: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guia de Identidade Visual</h1>
+        <p>Abaixo você pode ver o teste com o seu novo verde (<strong>#588048</strong>). Veja como ele muda a sensação da página em relação ao tom mais escuro.</p>
+
+        <!-- PALETA DE CORES -->
+        <h2>1. A Paleta Oficial (Atualizada)</h2>
+        
+        <h3>Cores Base (Personalidade e Estrutura)</h3>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="swatch" style="background-color: var(--verde-militar);"></div>
+                <div class="info">
+                    <strong>Verde Musgo (Novo)</strong>
+                    <span>#588048</span>
+                    <p><strong>Papel:</strong> Tom orgânico e natural.<br><strong>Atenção:</strong> Como ele é mais claro que o verde anterior, ele perde um pouco do contraste. É excelente para botões e fundos menores.</p>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="swatch" style="background-color: var(--verde-escuro-antigo);"></div>
+                <div class="info">
+                    <strong>Verde Tático Escuro</strong>
+                    <span>#2D3E2C</span>
+                    <p><strong>Dica de Design:</strong> Não jogue este fora! Mantenha ele como uma "cor de apoio" para quando você precisar de um fundo muito forte e profundo.</p>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="swatch" style="background-color: var(--verde-limao);"></div>
+                <div class="info">
+                    <strong>Verde Limão</strong>
+                    <span>#E4FD97</span>
+                    <p><strong>Papel:</strong> Inovação e energia (quebra a rigidez do verde escuro).<br><strong>Uso:</strong> Ícones, fundos de seções atrativas.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Ação e Conversão</h3>
+        <div class="color-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <div class="color-card">
+                <div class="swatch" style="background-color: var(--laranja-acao);"></div>
+                <div class="info">
+                    <strong>Laranja Vibrante</strong>
+                    <span>#FF5A26</span>
+                    <p><strong>Papel:</strong> Máximo call to action (a cor da ação).<br><strong>Uso:</strong> EXCLUSIVAMENTE em botões de compra/inscrição, links vitais e alertas. Ele nunca deve ser usado apenas para decorar.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TIPOGRAFIA -->
+        <h2>2. Tipografia: Montserrat</h2>
+        <div class="tipografia-box">
+            <p><strong>Toda esta página que você está vendo já foi programada utilizando a fonte Montserrat!</strong></p>
+            <p>Você fez uma escolha <strong>perfeita</strong> para a sua persona. A Montserrat é uma fonte sem serifa (sem aqueles 'pés' nas letras) e com design geométrico (letras largas, retas e firmes).</p>
+            <p><strong>O que ela transmite na psicologia do design:</strong> Autoridade, clareza, transparência, modernidade e muita firmeza. Combina 100% com a sua bagagem militar (direto ao ponto e estruturado) e com a necessidade de passar confiança para os corretores.</p>
+            
+            <h1 style="font-size: 2rem; margin-top: 30px;">ASSIM FICAM OS SEUS TÍTULOS DE IMPACTO</h1>
+            <p style="font-weight: 600;">E assim ficam os seus subtítulos (bold)</p>
+            <p style="font-weight: 400;">E assim ficam os textos normais de explicação na sua página de vendas, fáceis de ler e muito limpos.</p>
+        </div>
+
+
+        <!-- MANTRAS E SÍMBOLOS -->
+        <h2>3. A Voz da Marca (Mantras e Símbolos)</h2>
+        <div class="tipografia-box" style="border-left-color: var(--laranja-acao);">
+            <h3 style="color: var(--cinza-esverdeado); margin-top: 0;">O Símbolo de Força (🤘)</h3>
+            <p>A famosa "Mãozinha" é o ícone oficial da sua força. Ela não é apenas um desenho gráfico, ela representa a atitude de quem vai para cima do problema. Como você aplicou muito bem, ela serve como uma excelente assinatura visual.</p>
+            
+            <h3 style="color: var(--laranja-acao); margin-top: 30px; font-size: 1.5rem;">"Pau na Máquina!"</h3>
+            <p><strong>(Grito de Guerra / Resiliência)</strong><br>Sinônimo de <em>"vamos com tudo"</em>. É o seu mantra de resiliência e comando. Deve ser usado para acordar a sua audiência, fechar vídeos no Instagram, iniciar módulos do curso ou incentivar os corretores a saírem da inércia e aplicarem as estratégias.</p>
+            
+            <h3 style="color: var(--laranja-acao); margin-top: 30px; font-size: 1.5rem;">"Tamo junto de verdade"</h3>
+            <p><strong>(Mantra de Comunidade / Suporte)</strong><br>O mercado de planos de saúde pode ser solitário e competitivo. Esse mantra quebra a frieza e mostra que no seu projeto existe <strong>ajuda genuína</strong>. Use-o na área de membros, no suporte aos alunos e nos fechamentos de e-mails para criar forte conexão.</p>
+            
+            <h3 style="color: var(--verde-militar); margin-top: 30px; font-size: 1.5rem;">O Monograma "MLPF"</h3>
+            <p>A sigla de <em>Mais Leads Por Favor</em> (usando a fonte blocada na cor Verde Musgo) é o seu "Selo". Perfeito para usar como foto de perfil secundária, favicon de site ou carimbo em documentos PDF do curso, onde o nome inteiro ficaria pequeno demais para ler.</p>
+        </div>
+
+        <!-- APLICAÇÕES PRÁTICAS -->
+        <h2>4. Exemplos de Aplicação na Prática</h2>
+        <p>Veja como o novo verde se comporta. Você vai notar que a leitura no Bloco 1 (Fundo Musgo) fica um pouco mais suave e menos "agressiva".</p>
+
+        <!-- Exemplo 1: Fundo Novo -->
+        <div class="example-section bg-militar">
+            <h3>Bloco com o Novo Fundo (#588048)</h3>
+            <p>O texto branco ainda consegue ser lido. Porém, note que eu tirei o subtítulo "Limão", porque o Limão em cima deste verde médio fica com baixo contraste e dói a visão. O Laranja ainda funciona bem!</p>
+            <br>
+            <a href="#" class="btn btn-acao">Garantir Minha Vaga Agora</a>
+        </div>
+
+        <!-- Exemplo 2: Fundo Limão -->
+        <div class="example-section bg-limao">
+            <h3>Bloco com Fundo Verde Limão</h3>
+            <p>Aqui, para o texto não ficar invisível, nós precisamos continuar usando aquele Verde Escuro Antigo (#2D3E2C) nas letras e no botão. O novo verde musgo seria fraco demais para usar como letra aqui.</p>
+            <br>
+            <a href="#" class="btn btn-secundario">Ver os Módulos do Curso</a>
+        </div>
+
+        <!-- Exemplo 3: Fundo Claro -->
+        <div class="example-section bg-branco">
+            <h3 style="color: var(--verde-militar);">Bloco com Fundo Claro (Títulos no Verde Novo)</h3>
+            <p style="color: var(--cinza-esverdeado);">Aqui o novo verde brilha muito! Usar ele nos títulos do site branco deixa a página muito orgânica e elegante, menos "pesada" que o verde escuro militar.</p>
+            <br>
+            <a href="#" class="btn btn-acao">Fazer Minha Inscrição</a>
+        </div>
+
+    </div>
+</body>
+</html>
